@@ -67,20 +67,6 @@ class MainWindow(QMainWindow):
                               "border-bottom-width: 3px;" \
                               "border-radius: 5px;"
 
-    push_button_enter_style_2 = "color: rgb(255, 255, 255);" \
-                                "font: 75 12pt FreeSans;" \
-                                "background-color: rgba(6, 104, 249, 200);" \
-                                "border-top-color: rgba(151, 222, 247, 200);" \
-                                "border-left-color: rgba(151, 222, 247, 200);" \
-                                "border-right-color: rgba(4, 57, 135, 200);" \
-                                "border-bottom-color: rgba(4, 57, 135, 200);" \
-                                "border-style: solid;" \
-                                "border-top-width: 2px;" \
-                                "border-left-width: 2px;" \
-                                "border-right-width: 3px;" \
-                                "border-bottom-width: 3px;" \
-                                "border-radius: 6px;"
-
     def __init__(self) -> None:
         super(MainWindow, self).__init__()
 
