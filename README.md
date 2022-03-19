@@ -8,10 +8,10 @@ the user is graphically notified. This technique enrich the graphic user interfa
 For a widget to react to different events, an event filter must be installed on the widget and the method
 eventFiler must be reimplemented. 
 
+Follow the steps shown below to implement the eventFilter for three QPushButton.
+
 # What is an event filter?
 An event filter is an object that receives all events that are sent to this object. The filter can either stop the event or forward it to this object. The event filter filterObj receives events via its eventFilter() function. The eventFilter() function must return true if the event should be filtered, (i.e. stopped); otherwise it must return false.
-
-# The following are the steps to implement the eventFilter for three QPushButton.
 
 # Step 1: Create instances of the Widgets to be watch.
 self.button_1 = QPushButton()
@@ -23,8 +23,7 @@ self.button_1.installEventFilter(self)
 self.button_2.installEventFilter(self)
 self.button_3.installEventFilter(self)
 
-# Step 3: Override the method eventFilter for the class MainWindow.
-#         Check which object send the event and event type.
+# Step 3: Override the method eventFilter for the class MainWindow and then check which object send the event and event type.
     def eventFilter(self, source: QObject, event: QEvent) -> bool:
         # If a mouse press event has occurred.
         if event.type() == QtCore.QEvent.MouseButtonPress:
