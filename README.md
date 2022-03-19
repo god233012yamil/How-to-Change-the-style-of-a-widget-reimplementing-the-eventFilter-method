@@ -1,12 +1,12 @@
 # Introduction
-This code shows how to change the stylesheet of a widget (QPushButton) when the mouse is pressed,
-or the mouse is released, or the mouse enter into the widget, or the mouse leave from the widget.
+This code shows how to change the stylesheet of a widget (QPushButton) when the mouse is pressed, 
+the mouse is released, the mouse enters into the widget, or the mouse leaves from the widget.
 
-Change the stylesheet of a widget, is a way for the application to respond to different actions while
-the user is graphically notified. This technique enrich the graphic user interface experience.
+Changing the stylesheet of a widget is a way for the application to respond to different actions 
+while the user is graphically notified. This technique enriches the graphic user interface experience.
 
-For a widget to react to different events, an event filter must be installed on the widget and the method
-eventFiler must be reimplemented. 
+For a widget to react to different events, an event filter must be installed on the widget and the 
+method eventFiler must be reimplemented.
 
 Follow the steps shown below to implement the eventFilter for three QPushButton.
 
