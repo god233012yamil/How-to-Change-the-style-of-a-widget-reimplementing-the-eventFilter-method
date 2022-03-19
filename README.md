@@ -10,11 +10,11 @@ eventFiler must be reimplemented.
 
 Follow the steps shown below to implement the eventFilter for three QPushButton.
 
-# What is an event filter?
-An event filter is an object that receives all events that are sent to this object. The filter can either stop the event or forward it to this object. The event filter filterObj receives events via its eventFilter() function. The eventFilter() function must return true if the event should be filtered, (i.e. stopped); otherwise it must return false.
-
 # Video showing the code in action
 https://user-images.githubusercontent.com/5813359/159130593-3cde56cf-833c-4c6e-9998-ceceb9d341c6.mp4
+
+# What is an event filter?
+An event filter is an object that receives all events that are sent to this object. The filter can either stop the event or forward it to this object. The event filter filterObj receives events via its eventFilter() function. The eventFilter() function must return true if the event should be filtered, (i.e. stopped); otherwise it must return false.
 
 # Step 1: Create instances of the Widgets to be watch.
 self.button_1 = QPushButton()
