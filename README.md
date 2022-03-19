@@ -26,7 +26,7 @@ self.button_1.installEventFilter(self)
 self.button_2.installEventFilter(self)
 self.button_3.installEventFilter(self)
 
-# Step 3: Override the method eventFilter for the class MainWindow and then check which object send the event and event type.
+# Step 3: Override the method eventFilter for the class MainWindow.
     def eventFilter(self, source: QObject, event: QEvent) -> bool:
         # If a mouse press event has occurred.
         if event.type() == QtCore.QEvent.MouseButtonPress:
